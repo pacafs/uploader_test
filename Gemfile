@@ -9,10 +9,7 @@ group :development do
 	gem 'sqlite3'
 end
 
-group :production do
-	gem 'pg'
-end
-
+gem 'pg'
 
 gem 'rmagick'
 gem 'paperclip'
