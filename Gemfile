@@ -5,7 +5,14 @@ gem 'rails', '4.0.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+group :development do
+	gem 'sqlite3'
+end
+
+group :production do
+	gem 'pg'
+end
+
 
 gem 'rmagick'
 gem 'paperclip'
@@ -25,3 +32,5 @@ gem "less-rails"
 
 
 gem 'jquery-rails'
+
+gem 'rack-cors', :require => 'rack/cors'

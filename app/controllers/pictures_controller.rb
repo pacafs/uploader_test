@@ -1,6 +1,8 @@
 class PicturesController < ApplicationController
   # GET /pictures
   # GET /pictures.json
+  respond_to :json
+  
   def index
 
     @gallery = Gallery.find(params[:gallery_id])

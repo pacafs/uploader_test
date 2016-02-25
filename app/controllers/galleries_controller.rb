@@ -1,6 +1,8 @@
 class GalleriesController < ApplicationController
   # GET /galleries
   # GET /galleries.json
+  respond_to :json
+
   def index
     @galleries = Gallery.all
 
@@ -99,9 +101,9 @@ class GalleriesController < ApplicationController
   private
 
   def gallery_params
-    params.require(:gallery).permit(:description,
-                                    :name,
-                                    :pictures
-                                   )
+    params.require(:gallery).permit(:description, :name, :pictures)
   end
+
 end
+
+
