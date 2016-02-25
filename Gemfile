@@ -22,6 +22,8 @@ gem 'coffee-rails'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer'
 
+gem 'rails_12factor'
+
 gem 'uglifier'
 
 gem 'twitter-bootstrap-rails', '2.2.8'
