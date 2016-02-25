@@ -27,7 +27,6 @@ gem 'rails_12factor'
 gem 'uglifier'
 
 gem 'twitter-bootstrap-rails', '2.2.8'
-gem "less-rails"
 
 
 gem 'jquery-rails'
